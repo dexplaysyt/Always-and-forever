@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Love Question 💞</title>
+</head>
+<body style="text-align:center; font-family:Arial; margin-top:100px;">
+  <h2>Do you love me? 💘</h2>
+
+  <select id="answer">
+    <option value="">-- Choose an option --</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+
+  <button onclick="checkLove()">Submit</button>
+
+  <p id="message" style="font-size:20px; color:hotpink; margin-top:20px;"></p>
+
+  <script>
+    function checkLove() {
+      const answer = document.getElementById("answer").value;
+      const msg = document.getElementById("message");
+
+      if (answer === "yes") {
+        msg.textContent = "I love you always and forever ❤️";
+      } else if (answer === "no") {
+        msg.textContent = "I would still love you, don't care 😎 I’m kidnapping you 💘";
+      } else {
+        msg.textContent = "Please choose an answer 😅";
+      }
+    }
+  </script>
+</body>
+</html>
